@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script type="text/javascript">
+  
+
+   function artir()
+{
+    var a=parseInt(document.getElementById("a1").value);
+    a++;
+    document.getElementById("a1").value=a;
+    }
+     function eksil(){
+{
+    var a=parseInt(document.getElementById("a1").value);
+    if(a>0){
+    a--;
+    document.getElementById("a1").value=a;}
+    }
+  
+}
+
+   function artir2()
+{
+    var a=parseInt(document.getElementById("a2").value);
+    a++;
+    document.getElementById("a2").value=a;
+    }
+     function eksil2(){
+{
+    var a=parseInt(document.getElementById("a2").value);
+    if(a>0){
+    a--;
+    document.getElementById("a2").value=a;}
+    }
+  
+}
+   function artir3()
+{
+    var a=parseInt(document.getElementById("a3").value);
+    a++;
+    document.getElementById("a3").value=a;
+    }
+     function eksil3(){
+{
+    var a=parseInt(document.getElementById("a3").value);
+    if(a>0){
+    a--;
+    document.getElementById("a3").value=a;}
+    }
+  
+}
+   function artir4()
+{
+    var a=parseInt(document.getElementById("a4").value);
+    a++;
+    document.getElementById("a4").value=a+" adet";
+    }
+     function eksil4(){
+{
+    var a=parseInt(document.getElementById("a4").value);
+    if(a>0){
+    a--;
+    document.getElementById("a4").value=a;}
+    }
+  
+}
+   function artir5()
+{
+    var a=parseInt(document.getElementById("a5").value);
+    a++;
+    document.getElementById("a5").value=a;
+    }
+     function eksil5(){
+{
+    var a=parseInt(document.getElementById("a5").value);
+    if(a>0){
+    a--;
+    document.getElementById("a5").value=a;}
+    }
+  
+}
+   function artir6()
+{
+    var a=parseInt(document.getElementById("a6").value);
+    a++;
+    document.getElementById("a6").value=a;
+    }
+     function eksil6(){
+{
+    var a=parseInt(document.getElementById("a6").value);
+    if(a>0){
+    a--;
+    document.getElementById("a6").value=a;}
+    }
+  
+}
+  function sepett()
+{
+    var a=parseInt(document.getElementById("a1").value);
+    var b=parseInt(document.getElementById("a2").value);
+    var c=parseInt(document.getElementById("a3").value);
+    var d=parseInt(document.getElementById("a4").value);
+    var e=parseInt(document.getElementById("a5").value);
+    var g=parseInt(document.getElementById("a6").value);
+    var f=a+b+c+d+e+g;
+  document.getElementById("sepet").value="Sepetim :"+f+" adet Ürün";}
+
+
+
+
+
+
+
+      
+</script>
+  <link href="sitem.css" type="text/css" rel="stylesheet"/>
+<style>
+
+</style>
+</head>
+<body bgcolor="orange"  onclick="sepett()" >
+<div ><center>
+<ul  >
+  <li><a href="#Anasayfa">Anasayfa</a></li>
+  <li><a href="#ürünler">Ürünler</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Kategoriler</a>
+    <div class="dropdown-content">
+      <a href="#">Elektronik</a>
+      <a href="#">Giyim</a>
+      <a href="#">Gıda</a>
+    </div>
+  </li>
+  <li><a href="#hakkımızda">Hakkımızda</a></li>
+  <li><a href="#iletişim">İletişim</a></li>
+  <li><div class="genel" >  
+  <form >
+ <input type="text"  name="ad" placeholder="Kullanıcı adı"  />    
+ <input  style="margin-left:42px; " type="password" name="sifre" placeholder="Şifre" />  
+
+
+  <input class="buton" type="submit" value="Giriş"  />  
+
+
+ <a href=""   >Kayıt Ol </a>
+
+ <input type="text" size="15px" name="sep" value="Sepetim: 0 Adet Ürün"  id="sepet" readonly >
+ 
+</li>
+
+</ul>
+
+</div>
+<div id="ana_div" onclick="top()">
+    
+    <div class="div" id="div" align="center" ><img src="iphone.png"  alt="İPHONE 11 128GB" >
+     <input type="text" size="5px" name="la1" value="5200₺" readonly="" id="f1" >
+      <input type="text" size="1px" name="la1" value="0"  color="black"  id="a1">
+      <br>
+      <input type="button" name="ss1"  value="Sepetten çıkar" id="ç1" onclick="eksil()">
+      <input type="button" name="semih" value="Sepete Ekle" id="e1" onclick="artir()" ></div>
+    <div class="div" id="div2" align="center"><img src="samsung.png" >
+      <input type="text" size="5px" name="la1" value="2900₺" readonly  id="f2" >
+      <input type="text" size="1px" name="la1" value="0" readonly color="black"  id="a2"><br>
+      <input type="button" name="ss2"  value="Sepetten çıkar" id="ç2" onclick="eksil2()">
+      <input type="button" name="s2" value="Sepete Ekle" id="e2" onclick="artir2()" > </div>
+    <div class="div" id="div3" align="center"><img src="saat.png"  >
+      <input type="text" size="5px" name="la1" value="1500₺" readonly id="f3">
+      <input type="text" size="1px" name="la1" value="0" readonly color="black"  id="a3">  ><br>
+      <input type="button" name="ss3"  value="Sepetten çıkar" id="ç3" onclick="eksil3()">
+      <input type="button" name="s3" value="Sepete Ekle" id="e3"  onclick="artir3()"> </div>
+
+
+</div>
+<br>
+<div id="ana_div">
+    
+    <div class="div" id="div" align="center"><img src="saat2.png" >
+      <input type="text" size="5px" name="la1" value="2500₺" readonly id="f4" >
+      <input type="text" size="1px" name="la1" value="0" readonly color="black"  id="a4">
+      <br>
+      <input type="button" name="ss4"  value="Sepetten çıkar"  id="ç4" onclick="eksil4()">
+      <input type="button" name="s4" value="Sepete Ekle" id="e4" onclick="artir4()"></div>
+    <div class="div" id="div2" align="center"><img src="huawei.png" >
+
+      <input type="text" size="5px" name="la1" value="9500₺" readonly id="f5"  >
+      <input type="text" size="1px" name="la1" value="0" readonly color="black"  id="a5">
+      <br>
+      <input type="button" name="ss5"  value="Sepetten çıkar" id="ç5" onclick="eksil5()" >
+      <input type="button" name="s5" value="Sepete Ekle" id="e5"  onclick="artir5()" ></div>
+    <div class="div" id="div3" align="center"><img src="saat3.jpg" >
+      <input type="text" size="5px" name="la1" value="12500₺" readonly id="f6" >
+      <input type="text" size="1px" name="la1" value="0" readonly color="black"  id="a6">
+      <br>
+      <input type="button" name="ss6"  value="Sepetten çıkar" id="ç6" onclick="eksil6()" >
+      <input type="button" name="s6" value="Sepete Ekle" id="e6"  onclick="artir6()"></div>
+  
+
+</div>
+
+</form>
+ 
+<div class="footer"  >
+ <table border="0">
+
+ <tr> <td><a href="#Anasayfa">Anasayfa</a></td>
+ <td><a href="#Ürünler">Ürünler</a></td>
+  <td><a href="#Anasayfa">İletişim</a></td></tr>
+
+ <p >Copyright © 2019  Creative and Designed By Semih Baş Tüm Hakları Saklıdır.
+</p>
+                        <div class="kose">
+<textarea  placeholder="Bize Ulaşın"></textarea>
+<br>
+<input type="submit" name="" value="gönder">
+</div>
+
+                 
+ </table>
+  
+
+
+
+</div>
+ 
+</body>
+</html>
